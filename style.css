@@ -13,9 +13,9 @@ body {
 }
 
 .header{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     padding: 20px 10%;
     background-color: transparent;
@@ -42,7 +42,7 @@ body {
     height: 100%;
     background-color: #081b29;
     animation: showRight 0.4s ease forwards;
-    animation-delay: .5s;
+    animation-delay: .4s;
 }
 
 .navbar a{
@@ -61,10 +61,10 @@ body {
 
 .home{
     color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     padding: 0 10%;
+    padding-top: 100px;
 }
 
 .home-content{
@@ -206,8 +206,10 @@ body {
 }
 
 .home-sci{
-    position: absolute;
-    bottom: 70px;
+    position: relative;
+    margin-top: 40px;
+    /* position: absolute;
+    bottom: 70px; */
     display: flex;
     justify-content: space-between;
     width: 250px;
@@ -264,5 +266,22 @@ body {
 @keyframes showRight {
     100%{
         width: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home{
+        padding-top: 50px;
+    }
+    .header, .navbar{
+        display: block;
+    }
+
+    .navbar{
+        margin: 20px 0 20px 0;
+    }
+
+    .navbar a{
+        margin: 0 35px 0 0;;
     }
 }
